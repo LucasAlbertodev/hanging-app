@@ -6,7 +6,7 @@ import { getRandomWord } from "./helpers/getRandomWord";
 import "./App.css";
 
 function App() {
-  const [word, setWord] = useState(getRandomWord().toUpperCase());
+  const [word, setWord] = useState(getRandomWord());
   const [hiddenWord, setHiddenWord] = useState("_ ".repeat(word.length));
   const [attemps, setAttemps] = useState(0);
   const [gameOver, setGameOver] = useState(false);
